@@ -2,62 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Styles Conference</title>
-    <link rel="stylesheet" href="assets/stylesheets/cssFile.css">
+	<meta charset="utf-8">
+	<title>Bar Chart Project</title>
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
 </head>
 
 <body>
+	<div id="chart">
 
-    <header>
+		<form class="title-form">
 
-        <h1>
-          <a href="index.html">Styles Conference</a>
-        </h1>
-        <h3>August 24&ndash;26th &mdash; Chicago, IL</h3>
+			<label for="bar-title"></label>
+			<input type="text" name="bar-title" id="bar-title" value=" label your bar chart" required>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="speakers.html">Speakers</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="venue.html">Venue</a>
-            <a href="register.html">Register</a>
-          </nav>
+			<button type="submit">Add or update Bar Char Title</button>
 
-    </header>
+		</form>
 
-    <section>
-        <h2>Dedicated to the Craft of Building Websites</h2>
-        <p>Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest technologies. Join us this August!</p>
-        <a href="register.html">Register Now</a>
+		<form class="data-form">
 
-    </section>
+			<label for="column-title">Enter Text Value:</label>
+			<input type="text" name="column-title" id="column-title" required value=" less than 60 characters">
 
-    <section>
+			<label for="column-value">Enter Number Value:</label>
+			<input type="number" name="column-value" id="column-value" required min="0" max="100">
 
-        <section>
-            <a href="speakers.html">
-                <h5>Speakers</h5>
-                <h3>World-Class Speakers</h3>
-              </a>
-            <p>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.</p>
-        </section>
+			<label for="column-color">Select a color:</label>
+			<input type="color" name="column-color" id="column-color" value="#f2eded" required>
 
-    </section>
-    <a href="index.html"><small>&copy; Styles Conference</small></a>
-    <footer>
+			<button type="submit">Add</button>
+			<button type="reset">Reset</button>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="speakers.html">Speakers</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="venue.html">Venue</a>
-            <a href="register.html">Register</a>
-          </nav>
+		</form>
 
-        
-    </footer>
+		<form class="widthRadios">
 
+			<label>Change bar width:</label>
+			
+			<input type="radio" name="width" id="none" value="none" checked>
+			<label for="none">none</label>
+			
+			<input type="radio" name="width" id="one" value="one">
+			<label for="one">1px</label>
+			
+			<input type="radio" name="width" id="two" value="two">
+			<label for="two">2px</label>
+
+			<button type="submit">Change</button>
+			
+		</form>
+
+		<form class="heightRadios">
+				
+				<label>Move number values:</label>
+				
+				<input type="radio" name="height" id="top" value="top" checked>
+				<label for="top">Top</label>
+				
+				<input type="radio" name="height" id="middle" value="top">
+				<label for="middle">Middle</label>
+				
+				<input type="radio" name="height" id="bottom" value="bottom">
+				<label for="bottom">Bottom</label>
+	
+				<button type="submit">Change</button>
+	
+			</form>
+
+		<h3 class="charttitle"></h3>
+		<table class="table">
+			<tr class="bars"></tr>
+		</table>
+	</div>
 </body>
 
 </html>
+<script src="scripts.js"></script>
