@@ -45,3 +45,50 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+html,
+body {
+  font-family: Consolas, monaco, monospace;
+}
+
+#chart {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+.charttitle {
+  text-align: center;
+}
+
+.bars td {
+  min-width: 100px;
+  vertical-align: bottom;
+  height: 300px;
+  text-align: center;
+}
+
+.bars > div {
+  
+}
+
+.columnName {
+
+}
+
+.addPadding1 {
+/*padding: 1px;*/
+}
+
+.addPadding2 {
+
+}
+
+
+
+* {
+  border: 1px solid red !important;
+  }
+  
